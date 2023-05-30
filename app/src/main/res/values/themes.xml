@@ -59,12 +59,12 @@
     <!--###############################-->
     <!--Navigation drawer font style is here-->
     <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:fontFamily">@font/sf_ns_text</item>
+        <item name="android:fontFamily">@font/mulish_semibold</item>
     </style>
 
     <!-- ProgressBar color -->
     <style name="ProgressBar">
-        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondary">@color/green</item>
     </style>
 
 </resources>

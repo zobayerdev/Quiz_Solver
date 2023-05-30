@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+
+
+            <item
+                android:id="@+id/nav_leaderboard"
+                android:icon="@drawable/ic_leaderboard"
+                android:title="Leaderboard" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Resource">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_pdf"
+                android:icon="@drawable/ic_pdf"
+                android:title="All PDF" />
+
+            <item
+                android:id="@+id/nav_video"
+                android:icon="@drawable/ic_video"
+                android:title="Reference Video" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Reminder">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_reminder"
+                android:icon="@drawable/ic_reminder"
+                android:title="Exam Reminder" />
+
+            <item
+                android:id="@+id/nav_exam_schedule"
+                android:icon="@drawable/ic_schedule"
+                android:title="Daily Exam Schedule" />
+
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/nav_job_reminder"
+        android:icon="@drawable/ic_govtnf"
+        android:title="Govt job Notification" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log out" />
+
+</menu>
