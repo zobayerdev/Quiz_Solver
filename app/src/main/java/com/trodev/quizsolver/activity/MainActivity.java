@@ -7,9 +7,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -130,11 +136,16 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Reference Video", Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.nav_job_reminder:
-                Toast.makeText(this, "All job Notification", Toast.LENGTH_SHORT).show();
-                break;
-
             case R.id.nav_developer:
+                final Dialog dialog = new Dialog(this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.developer_bottomsheet_layout);
+
+                dialog.show();
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+                dialog.getWindow().setGravity(Gravity.BOTTOM);
                 Toast.makeText(this, "Developer", Toast.LENGTH_SHORT).show();
                 break;
 

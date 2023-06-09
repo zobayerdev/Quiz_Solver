@@ -8,9 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.card.MaterialCardView;
 import com.trodev.quizsolver.R;
 
 public class HomeFragment extends Fragment {
+
+    private MaterialCardView pdfMc;
 
     public HomeFragment() {
         // Required empty public constructor

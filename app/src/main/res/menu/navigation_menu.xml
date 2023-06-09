@@ -56,11 +56,6 @@
     </item>
 
     <item
-        android:id="@+id/nav_job_reminder"
-        android:icon="@drawable/ic_govtnf"
-        android:title="Govt job Notification" />
-
-    <item
         android:id="@+id/nav_developer"
         android:icon="@drawable/ic_developer"
         android:title="Developer" />
