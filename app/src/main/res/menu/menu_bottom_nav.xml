@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_menu_home"
+        android:fontFamily="@font/mulish_semibold"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bottom_menu_govt"
+        android:fontFamily="@font/mulish_semibold"
+        android:icon="@drawable/ic_govt"
+        android:title="Govt Job Circular" />
+
+    <item
+        android:id="@+id/bottom_menu_notification"
+        android:fontFamily="@font/mulish_semibold"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification" />
+
+</menu>
