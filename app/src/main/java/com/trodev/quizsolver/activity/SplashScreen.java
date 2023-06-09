@@ -1,10 +1,12 @@
-package com.trodev.quizsolver;
+package com.trodev.quizsolver.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.trodev.quizsolver.R;
 
 public class SplashScreen extends AppCompatActivity {
     @Override

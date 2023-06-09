@@ -5,7 +5,7 @@ It's a Quiz Solver application. It's a android project. It's provide SSC, HSC, U
 - <b>Quiz Solver application</b>
   - SSC Examination Question Bank.
   - HSC Examination Question Bank.
-  - University Examintaion Question Bank.
+  - University Examination Question Bank.
   - BCS Question Bank.
   - Quiz Test and Results.
   - Leaderboard.

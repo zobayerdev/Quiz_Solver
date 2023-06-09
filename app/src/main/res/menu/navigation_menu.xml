@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <item android:title="Profile">
 
         <menu>
@@ -11,10 +10,9 @@
                 android:icon="@drawable/ic_profile"
                 android:title="Profile" />
 
-
             <item
                 android:id="@+id/nav_leaderboard"
-                android:icon="@drawable/ic_leaderboard"
+                android:icon="@drawable/ic_leaderboards"
                 android:title="Leaderboard" />
 
         </menu>
@@ -53,16 +51,24 @@
                 android:icon="@drawable/ic_schedule"
                 android:title="Daily Exam Schedule" />
 
-
         </menu>
 
     </item>
-
 
     <item
         android:id="@+id/nav_job_reminder"
         android:icon="@drawable/ic_govtnf"
         android:title="Govt job Notification" />
+
+    <item
+        android:id="@+id/nav_developer"
+        android:icon="@drawable/ic_developer"
+        android:title="Developer" />
+
+    <item
+        android:id="@+id/nav_policy"
+        android:icon="@drawable/ic_privacy"
+        android:title="Privacy Policy" />
 
     <item
         android:id="@+id/nav_logout"

@@ -1,4 +1,4 @@
-package com.trodev.quizsolver;
+package com.trodev.quizsolver.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -10,17 +10,20 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
+import com.trodev.quizsolver.PrivacyPolicyActivity;
+import com.trodev.quizsolver.R;
+import com.trodev.quizsolver.fragments.GovtFragment;
+import com.trodev.quizsolver.fragments.HomeFragment;
+import com.trodev.quizsolver.fragments.NotificationFragment;
 
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-
     /*import all package*/
     private BottomNavigationView bottomNavigationView;
     private DrawerLayout drawerLayout;
@@ -33,10 +36,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigation_view);
-
 
         // #######################
         // Drawer Layout implement
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(this::onOptionsItemSelected);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-
+        /*bottom navigation working */
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         loadHomeFragment();
 
@@ -71,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 
     private void loadHomeFragment() {
         setTitle("Dashboard");
@@ -131,13 +131,21 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_job_reminder:
-                Toast.makeText(this, "Govt job Notification", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "All job Notification", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_developer:
+                Toast.makeText(this, "Developer", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_policy:
+                Toast.makeText(this, "Privacy Policy", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
                 break;
 
             case R.id.nav_logout:
                 Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                 break;
-
         }
 
         return super.onOptionsItemSelected(item);
